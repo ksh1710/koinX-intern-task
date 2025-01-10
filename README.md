@@ -29,9 +29,11 @@ This project provides APIs to fetch cryptocurrency data (Bitcoin, Matic, and Eth
 git clone https://github.com/username/repository-name.git
 cd repository-name
 
-###  2. Install Dependencies
+###  2. Install Dependencies and create .env file 
 
-npm install
+npm install 
+
+MONGO_ATLAS_URI= mongodb+srv://<username>:<pwd>@koinx-intern.4xeej.mongodb.net/?retryWrites=true&w=majority&appName=<cluster-name>
 
 ### 3. Running the Project Locally
 
@@ -91,5 +93,9 @@ The public API is available as:
 curl "http://172.210.80.153:3000/api/deviation?coin=bitcoin
 
 curl "http://172.210.80.153:3000/api/stats?coin=bitcoin
+
+Also, the Mongo db cluster being used is an M0-free instance served by Azure.
+
+For further details contact: kshitizagarwal1710@gmail.com
 
 
